@@ -20,3 +20,10 @@ fruits = {
     
 }
 puts fruits["yellow"]
+# Second way to create a hash
+proteins = Hash.new
+proteins["meat"] = "Beef"
+proteins["fluid"] = "milk"
+proteins["vegetables"] = "beans"
+
+puts proteins["meat"]
