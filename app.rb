@@ -14,7 +14,7 @@ hash_name = {
 puts hash_name["key4"]
 # Creating a hash
 fruits = {
-    "green" => "apple",
+    "red" => "apple",
     "yellow" => "banana",
     "green" => "guava"
     
@@ -27,3 +27,23 @@ proteins["fluid"] = "milk"
 proteins["vegetables"] = "beans"
 
 puts proteins["meat"]
+# how to remove/delete hashes
+puts proteins.delete("fluid")
+# We can as well initialize hashes using symbols-they are also accessed using symbols
+ bio = {
+     name: "Israel",
+     age: 8
+ }
+ bio2 = {
+     gender:"male",
+     religion: "Christian"
+ }
+ puts bio[:name]
+#  .keys to access all the keys available
+puts bio.keys
+# Accessing values
+puts bio.values
+# empty?-To check if a hash is empty
+puts bio.empty?
+# .merge to join multiple hashes
+puts bio.merge bio2
